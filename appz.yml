@@ -13,4 +13,4 @@
     deploy:
         context: aryam21/DEV
         replicas: 1
-        revision : 1
+        revision : 2
