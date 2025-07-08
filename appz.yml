@@ -1,0 +1,16 @@
+    app:
+        name: worker
+        code: WORKER
+        notify: aramanan@ecloudcontrol.com
+        
+    build:
+        version: 21.0
+        env: DEV
+        build_file: none
+        output_files: output/*.zip
+        image_template: workermaster-21.0
+        
+    deploy:
+        context: aryam21/DEV
+        replicas: 1
+        revision : 0
